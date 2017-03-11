@@ -76,6 +76,21 @@ if [[$COND1==$VALOR]]; then  #INCORRETO, NAO FUNCIONA!
 if [[$COND1 == $COND2]]; then  #INCORRETO, NAO FUNCIONA!
 ```
 
+### Then
+Apos inicializar o _if_, depois de escrever a condicao, se da ser necessario o "_then_", na outra linha. Pode-se adotar por motivos de estetica, adicionar o ";" e escrever na mesma linha do _if_.
+```bash
+if [[ $COND != $VALOR ]]; then
+    # CODIGO
+fi
+
+# OU
+
+if [[ $COND != $VALOR ]]
+then
+    # CODIGO
+fi
+```
+
 ### Sintaxe *FI*nal do if
 Para declarar um _if_ em shell script, o marcador '_if_' denomina o comeco, e o '_fi_', o seu final.
 ```bash
@@ -100,6 +115,9 @@ fi
 ## Exercicio 01
 Utilizando os conhecimentos de condicional, crie um shell script, de nome '*login.sh*', que simula um sistema de login.
 Usando a chamada _read_, o usuario escrevera uma senha para o programa tratar se a senha suprida foi correta ou nao.
+
+    Obs: Se estiver com dificuldade para desenvolver o script, confira o shell script de base contido nesta pasta de aula, denominado 'base.sh'
+
 
 
 ## Final de Aula
