@@ -24,6 +24,15 @@ nome = "Andre";  # ERRADO! NAO FUNCIONA!
 
 Como demonstrado, as variaveis nao podem ter espaco entre o simbolo de _=_ que as define. *Nunca esqueca disso, programador*.
 
+### Referencia de variaveis
+Para referenciar o valor contido em uma variavel, usa-se o simbolo '_$_'.
+
+    Observacao: Nao se utiliza '_$_' para a definicao, somente para referenciar valores contidos nas variaveis.
+
+```bash
+rua="Rua Marechal Deodoro, 567"  # definicao
+echo "Eu moro na $rua"  # referencia ao valor
+```
 
 ## Exercicio 01
 Utilizando os conhecimento empreendidos na aula 01 e 02, desenvolva um script que defina uma variavel 'altura' e 'peso' com qualquer valor e imprima-os na tela usando 'echo'. Use os exemplos acima como base. Salve o arquivo como 'massa_corporal.sh' e prossiga.
@@ -51,3 +60,13 @@ cp massa_corporal.sh massa_corporal_read.sh
 Agora reforme o codigo de forma que, ao inves de definicao estatica dos valores, utilize da chamada read para receber os valores dinamicamente durante a execucao, conforme o exemplo acima.
 
 *Nao esqueca de adicionar 'echo' antes de chamar read, para que o usuario saiba qual valor ele estara inserindo*
+Concluido o exercicio, salve-o e prossiga.
+
+## Final de aula
+Com os scripts de exercicio salvos na pasta da aula02, execute os comandos para enviar a sua aula para o repositorio remoto:
+```bash
+git checkout -b NomeDoAluno
+git add massa_corporal.sh massa_corporal_read.sh
+git commit -m "Exercicios da aula 02"
+git push origin NomeDoAluno
+```
