@@ -13,26 +13,26 @@ Para comecar a aula, basta ser inscrito na Organizacao "Hacking the Linux Shell"
 ## Instalando o git no Linux
 As instrucoes abaixo sao para distros Debian-like e/ou utilizam do gerenciador de pacotes 'apt'
 ```bash
-root@pc# apt-get install git  # sudo se for user normal
-root@pc# man git  # faca uma leitura do manual
+sudo apt-get install git  # sudo se for user normal
+man git  # faca uma leitura do manual
 ```
 
 ## Para clonar um repositorio e comecar as aulas
 ```bash
-user@pc$ cd ~   # vai pra /home/
-user@pc$ git clone https://github.com/USUARIO/REPOSITORIO  # clona o diretorio para a pasta local
-user@pc$ cd REPOSITORIO/  # entra no diretorio
-user@pc$ git checkout -b TURMA1_ALUNO  # cria um ramo para desenvolver codigo sem alterar o ramo 'master'
+cd ~   # vai pra /home/
+git clone https://github.com/USUARIO/REPOSITORIO  # clona o diretorio para a pasta local
+cd REPOSITORIO/  # entra no diretorio
+git checkout -b TURMA1_ALUNO  # cria um ramo para desenvolver codigo sem alterar o ramo 'master'
 ```
 
 
 ## Para criar um commit e enviar ao repositorio
 ```bash
-user@pc$ touch arquivo.sh  # crie um arquivo shell
-user@pc$ echo "Conteudo e exercicios praticos" >> arquivo.sh  # faca as aulas dentro dele
-user@pc$ git add arquivo.sh  # adicione as alteracoes e crie o commit
-user@pc$ git commit -m "Primeira aula e exercicios praticos"  # isso fecha o commit
-user@pc$ git push origin TURMA1_ALUNO  # envia o conteudo local
+touch arquivo.sh  # crie um arquivo shell
+echo "Conteudo e exercicios praticos" >> arquivo.sh  # faca as aulas dentro dele
+git add arquivo.sh  # adicione as alteracoes e crie o commit
+git commit -m "Primeira aula e exercicios praticos"  # isso fecha o commit
+git push origin TURMA1_ALUNO  # envia o conteudo local
 ```
 
 # Como funciona o curso
