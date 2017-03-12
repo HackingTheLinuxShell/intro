@@ -66,7 +66,7 @@ function add_unstaged_files
         done
     done
 }
-
+a
 function create_commit
 {
     echo -n -e "[${YEL}*${END}] Criando commit: ";
