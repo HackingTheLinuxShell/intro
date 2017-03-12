@@ -77,10 +77,7 @@ Desenvolva um shell script com o nome '_verificaUser.sh_' que recebe a entrada d
 Agora faca com que a saida do script do exercicio 01 seja redirecionada ao arquivo 'usuario.txt' e nao para a saida padrao.
 
 ## Final da aula
-Feito o script da aula, execute os comandos abaixo para enviar o codigo para avaliacao do professor no repositorio remoto:
+Para finalizar a aula e enviar os exercicios realizados para o repositorio remoto, execute o script '_encerrar.sh_'
 ```bash
-git checkout -b NomeDoAluno;
-git add verificaUser.sh;
-git commit -m "Exercicio da aula 04";
-git push origin NomeDoAluno;
+./encerrar.sh
 ```

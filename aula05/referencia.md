@@ -39,10 +39,7 @@ Faca um shell script chamado '_logger.sh_' que redirecione a outro arquivo '_log
 
 
 ## Final de aula
-Terminando os scripts, execute os comandos abaixos para que o professor seja capaz de avaliar o desempenho:
+Para finalizar a aula e enviar os exercicios realizados para o repositorio remoto, execute o script '_encerrar.sh_'
 ```bash
-git checkout -b NomeDoAluno;
-git add queHoras.sh logger.sh log.log;
-git commit -m "Exercicios da aula 05";
-git push origin NomeDoAluno;
+./encerrar.sh
 ```

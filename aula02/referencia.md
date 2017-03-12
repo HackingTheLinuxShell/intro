@@ -63,10 +63,7 @@ Agora reforme o codigo de forma que, ao inves de definicao estatica dos valores,
 Concluido o exercicio, salve-o e prossiga.
 
 ## Final de aula
-Com os scripts de exercicio salvos na pasta da aula02, execute os comandos para enviar a sua aula para o repositorio remoto:
+Para finalizar a aula e enviar os exercicios realizados para o repositorio remoto, execute o script '_encerrar.sh_'
 ```bash
-git checkout -b NomeDoAluno
-git add massa_corporal.sh massa_corporal_read.sh
-git commit -m "Exercicios da aula 02"
-git push origin NomeDoAluno
+./encerrar.sh
 ```

@@ -5,29 +5,29 @@ Hacking the Linux Shell - Aula 01
 ## Criando um arquivo
 Para criar um arquivo utilizando o linux shell, use o comando touch, como no exemplo a seguir:
 ```bash
-user@pc$ touch arquivo
+touch arquivo
 ```
 
 ## Executando scripts
 Para executar um arquivo no shell linux, usando como exemplo o arquivo acima descrito, pode acontecer da seguinte forma:
 ```bash
-user@pc$ ./arquivo  # executa o arquivo usando o bash
+./arquivo  # executa o arquivo usando o bash
 ```
 
 ## Shebang
 Shell scripts sao executados pelo bash, que geralmente esta situado na pasta /bin, portanto, o caminho padrao do bash se da no /bin/bash;
 Sabendo disto, podemos pressupor que o seguinte comando tambem funcionaria para executar shell scripts:
 ```bash
-user@pc$ /bin/bash arquivo  # tambem executa o arquivo
-user@pc$ bash arquivo  # executa o arquivo se /bin estiver na variavel PATH do sistema
+/bin/bash arquivo  # tambem executa o arquivo
+bash arquivo  # executa o arquivo se /bin estiver na variavel PATH do sistema
 ```
 
 Por padrao, o terminal bash executara qualquer arquivo que nao especificar singularmente qual interpretador que deve ser usado.
 Supondo que temos um script em Python (uma linguagem de programacao script), surgirao erros se nao houver definicao de shebang.
 Exemplo:
 ```bash
-user@pc$ ./arquivo.py
-command not found: print("Hello World")
+./arquivo.py
+arquivo.py: command not found: print("Hello World")
 ```
 
 Para ultrapassar este problema, apresento-lhe a shebang. O shebang se caracteriza por ser a primeira linha do script, segue exemplos de shebang:
@@ -65,10 +65,7 @@ O comando 'exit' tem a funcao de sair do script. Pode acompanhar um numero, faze
 Salve o arquivo com o nome "HelloWorld.sh" e execute-o utilizando qualquer metodo lecionado acima.
 
 ## Final de aula
-Salve o seu primeiro shell script e execute os comandos para enerrar a aula e iniciar o periodo de avaliacao do professor:
+Para finalizar a aula e enviar os exercicios realizados para o repositorio remoto, execute o script '_encerrar.sh_'
 ```bash
-git checkout -b NomeDoAluno
-git add HelloWorld.sh
-git commit -m "Meu primeiro script"
-git push origin NomeDoAluno
+./encerrar.sh
 ```

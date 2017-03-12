@@ -23,3 +23,10 @@ Como demonstrado acima, em bash, a variavel "_$?_" detem o return code do *ULTIM
 
 ## Utilidade e uso
 Pode parecer que nao, mas o codigo de retorno eh um dos parametro que eu mais exploro durante meus scripts. A verificacao de sucesso fica extremamente simples.
+
+
+## Final de aula
+Para finalizar a aula e enviar os exercicios realizados para o repositorio remoto, execute o script '_encerrar.sh_'
+```bash
+./encerrar.sh
+```

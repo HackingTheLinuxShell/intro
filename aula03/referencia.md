@@ -121,10 +121,7 @@ Usando a chamada _read_, o usuario escrevera uma senha para o programa tratar se
 
 
 ## Final de Aula
-Salve o arquivo 'login.sh' e execute os comandos abaixo para enviar o codigo ao repositorio remoto:
+Para finalizar a aula e enviar os exercicios realizados para o repositorio remoto, execute o script '_encerrar.sh_'
 ```bash
-git checkout -b NomeDoAluno;
-git add login.sh;
-git commit -m "Exercicio da Aula 03";
-git push origin NomeDoAluno;
+./encerrar.sh
 ```
