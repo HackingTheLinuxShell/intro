@@ -7,7 +7,7 @@ Apesar de shell script ser uma linguagem de programacao interpretada, ela difere
 *Termine de ler este documento ate o final, muito provavelmente algo podera parecer obscuro durante a leitura mas tudo se resolvera ate o final.*
 
 # Como aprender
-Para comecar a aula, basta ser inscrito na Organizacao "Hacking the Linux Shell" (https://github.com/HackingTheLinuxShell) e clonar o repositorio da organizacaco e criar um ramo (branch) para desenvolver os exercicios.
+Para comecar a aula, basta ser inscrito na Organizacao "Hacking the Linux Shell" (https://github.com/HackingTheLinuxShell) e clonar o repositorio da organizacacao para desenvolver os exercicios.
 
 
 # Como usar o git para aprender
