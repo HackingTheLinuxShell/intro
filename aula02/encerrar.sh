@@ -2,7 +2,7 @@
 
 # Lock file definition
 lock_file="../.lock";
-commit_msg="Exercicios Aula 01"
+commit_msg="Exercicios Aula 02"
 
 # Colors definition
 BLD="\033[01m";
