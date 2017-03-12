@@ -1,4 +1,4 @@
-# Hacking the Linux Shell
+# Hacking the Linux Shell - Introduction Course
 
 # Introducao
 Este curso guiara o aluno pelo caminho do shell script.
@@ -8,6 +8,8 @@ Apesar de shell script ser uma linguagem de programacao interpretada, ela difere
 
 # Como aprender
 Para comecar a aula, basta ser inscrito na Organizacao "Hacking the Linux Shell" (https://github.com/HackingTheLinuxShell) e clonar o repositorio da organizacaco e criar um ramo (branch) para desenvolver os exercicios.
+
+
 # Como usar o git para aprender
 
 ## Instalando o git no Linux
@@ -17,24 +19,17 @@ sudo apt-get install git  # sudo se for user normal
 man git  # faca uma leitura do manual
 ```
 
-## Para clonar um repositorio e comecar as aulas
+## Para clonar o repositorio e comecar as aulas
 ```bash
 cd ~   # vai pra /home/
-git clone https://github.com/USUARIO/REPOSITORIO  # clona o diretorio para a pasta local
-cd REPOSITORIO/  # entra no diretorio
-git checkout -b TURMA1_ALUNO  # cria um ramo para desenvolver codigo sem alterar o ramo 'master'
+git clone https://github.com/HackingTheLinuxShell/intro  # clona o diretorio para a pasta local
+cd intro/  # entra no diretorio
 ```
 
-
-## Para criar um commit e enviar ao repositorio
-```bash
-touch arquivo.sh  # crie um arquivo shell
-echo "Conteudo e exercicios praticos" >> arquivo.sh  # faca as aulas dentro dele
-git add arquivo.sh  # adicione as alteracoes e crie o commit
-git commit -m "Primeira aula e exercicios praticos"  # isso fecha o commit
-git push origin TURMA1_ALUNO  # envia o conteudo local
-```
+## Para comecar a aprender no Hacking The Linux Shell
+Basta executar o script '_comecar.sh_';
+Ao final da execucao do script, tudo estara pronto para o inicio das aulas!
 
 # Como funciona o curso
 O curso se divide logicamente em sprints (periodos de trabalho) denominados aulas. Cada aula tera material de apoio (referencia), explicacao comentada no script de base e no final, uma proposta de pratica dos conhecimentos abordados na aula.
-O aluno deve clonar o repositorio em sua maquina, ler e desenvolver o que a aula sugere em seu conteudo e apos concluida a atividade pratica, o aluno deve seguir as recomendacoes acima sobre o uso do git e criar um repositorio separado para hospedar a sua atividade individual dentro da organizacao "Hacking the Linux Shell", onde o professor responsavel tratara de corrigir e avaliar a aula, no tempo devido.
+O aluno deve clonar o repositorio em sua maquina, ler e desenvolver o que a aula sugere em seu conteudo e apos concluida a atividade pratica, o aluno deve seguir as recomendacoes de "Final de Aula" para hospedar a sua atividade individual dentro da organizacao "Hacking the Linux Shell", onde o professor responsavel tratara de corrigir e avaliar a aula, no tempo devido.
