@@ -2,6 +2,7 @@
 
 # Lock file definition
 lock_file="../.lock";
+commit_msg="Exercicios Aula 01"
 
 # Colors definition
 BLD="\033[01m";
@@ -77,7 +78,6 @@ function create_commit
     git commit -m "$1" > /dev/null 2>&1;
     if [[ $? == 0 ]]; then
         echo -e "${GRN}SUCESSO${END}";
-        push_remote;
     else
         echo -e "${RED}FALHOU${END}";
     fi
@@ -96,4 +96,5 @@ function push_remote
 
 check_branch;
 add_unstaged_files;
-create_commit "Exercicios aula 01";
+create_commit "$commit_msg";
+push_remote;
