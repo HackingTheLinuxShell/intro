@@ -34,6 +34,24 @@ else
 fi
 ```
 
+### Novo comando: mkdir
+O comando 'mkdir' (make dir) traduz-se para o portugues em "Fazer diretorio", no sentido estrito.
+
+Para criar um diretorio:
+```bash
+mkdir DiretorioTeste/
+```
+
+Para criar uma arvore de diretorios:
+```bash
+mkdir -p DiretorioTeste/SubDiretorio01/SubDiretorio02
+```
+
+Para criar diretorios com verbose (mensagem na tela):
+```bash
+mkdir -v DiretorioTeste2/
+```
+
 ## Exericio 01
 Crie um shell script para criar uma estrutura de diretorios, obedecendo esta hierarquia:
 
