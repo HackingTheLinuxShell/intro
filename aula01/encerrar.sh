@@ -60,13 +60,17 @@ function add_unstaged_files
         for excluded_file in "${excluded[@]}"; do
             if [[ $f == $excluded_file ]]; then
                 echo -e "[${YEL}-${END}] Pulando arquivo '${excluded_file}'";
-                git reset HEAD "${f}";
+                git reset HEAD "${f}" > /dev/null 2>&1;
                 break;
             fi
         done
     done
+
+    n_added=$(git status 2> /dev/null | grep -oP 'modified?|new file' | wc -l);
+    echo  -e "[${YEL}*${END}] Foram adicionados ${n_added} arquivos para o commit.";
 }
-a
+
+
 function create_commit
 {
     echo -n -e "[${YEL}*${END}] Criando commit: ";
@@ -92,4 +96,4 @@ function push_remote
 
 check_branch;
 add_unstaged_files;
-create_commit;
+create_commit "Exercicios aula 01";
