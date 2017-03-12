@@ -23,6 +23,28 @@ Como demonstrado acima, em bash, a variavel "_$?_" detem o return code do *ULTIM
 
 ## Utilidade e uso
 Pode parecer que nao, mas o codigo de retorno eh um dos parametro que eu mais exploro durante meus scripts. A verificacao de sucesso fica extremamente simples.
+```bash
+diretorio="teste";
+echo -n -e "Criando diretorio: ";
+mkdir $diretorio;
+if [[ $? != 0 ]]; then
+    echo "Erro criando diretorio";
+else
+    echo "Diretorio $diretorio criado com sucesso!";
+fi
+```
+
+## Exericio 01
+Crie um shell script para criar uma estrutura de diretorios, obedecendo esta hierarquia:
+
+        Arquivos/
+        |____ Programas/
+        |____ Downloads/
+        |____ Imagens/
+        |____ Videos/
+
+
+_Caso haja dificuldade para realizacao do script, consulte o script de base 'base.sh'_
 
 
 ## Final de aula
