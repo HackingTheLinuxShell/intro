@@ -32,4 +32,5 @@ Ao final da execucao do script, tudo estara pronto para o inicio das aulas!
 
 # Como funciona o curso
 O curso se divide logicamente em sprints (periodos de trabalho) denominados aulas. Cada aula tera material de apoio (referencia), explicacao comentada no script de base e no final, uma proposta de pratica dos conhecimentos abordados na aula.
-O aluno deve clonar o repositorio em sua maquina, ler e desenvolver o que a aula sugere em seu conteudo e apos concluida a atividade pratica, o aluno deve seguir as recomendacoes de "Final de Aula" para hospedar a sua atividade individual dentro da organizacao "Hacking the Linux Shell", onde o professor responsavel tratara de corrigir e avaliar a aula, no tempo devido.
+
+O aluno deve clonar o repositorio em sua maquina, ler e desenvolver o que a aula sugere em seu conteudo e apos concluida a atividade pratica, o aluno deve seguir as recomendacoes de "_Final de Aula_" de cada aula para hospedar a sua atividade individual dentro da organizacao "Hacking the Linux Shell", onde o professor responsavel tratara de corrigir e avaliar a aula, no tempo devido.
