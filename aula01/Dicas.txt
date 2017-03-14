@@ -1,0 +1,2 @@
+André, delete esse arquivo depois, aqui eu só vou usar pra colocar algumas dicas gerais conforme eu for passando pelas aulas, eu deixei algums comentarios especificos quando achei necessario em cada aula.
+1- Você poderia colocar um titulo em cada aula no ja na apresentação ou no nome do arquivo, pode acontecer da pessoa ter duvida no futuro de um assunto especifico e isso iria ajudar a ver onde iria procurar por ajuda. ex aula 3-Condicionais, ou Condicionais.md.
