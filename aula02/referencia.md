@@ -34,9 +34,6 @@ rua="Rua Marechal Deodoro, 567"  # definicao
 echo "Eu moro na $rua"  # referencia ao valor
 ```
 
-## Exercicio 01
-Utilizando os conhecimento empreendidos na aula 01 e 02, desenvolva um script que defina uma variavel 'altura' e 'peso' com qualquer valor e imprima-os na tela usando 'echo'. Use os exemplos acima como base. Salve o arquivo como 'massa_corporal.sh' e prossiga.
-
 ## Recebendo entrada de dados durante a execucao do script
 Definir variaveis eh um dos recursos mais utilizado por programadores, entretanto, muitas vezes, para adicionar dinamicidade para o script, deve-se receber input (entrada) de dados durante a execucao. Nao seria pratico para o programador, ter que alterar os valores do seu codigo-fonte toda vez que desejar uma saida diferente. Para isso, conheceremos a chamada _read_.
 
@@ -51,6 +48,51 @@ echo "Ola, $nome.";  # cumprimenta o usuario baseado no valor recebido na chamad
 exit 0;
 ```
 
+## Especies de variaveis nativas (built-in) do bash
+
+### Comprimento de variaveis
+Para medir o comprimento de uma variavel, seja ela string ou uma array, utiliza-se o simbolo _#_, como demonstra o trecho a seguir:
+```bash
+nome="Andre";
+echo "Andre tem ${#nome} letras.";
+Andre tem 5 letras.
+```
+
+### Variaveis de argumentos: $1, $2, $3
+As variaveis $1, $2, $3 referem-se aos argumentos passados pelo script. Note essa caracteristica com o trecho a seguir:
+```bash
+./script.sh "A" "B" "C"
+```
+Neste exemplo, o $1 tera o valor "A", o $2 tera o valor "B" e o $3 tera o valor "C".
+
+### Variavel de PID
+Eh possivel retornar o PID (Process ID) do shell script (ou do ultimo processo aberto pelo shell script) utilizando-se da variavel $$, segue exemplo pratico:
+```bash
+#!/bin/bash
+echo "Este script tem PID $$";
+Este script tem PID 24824
+```
+
+### Variaveis em lacoes de repeticoes
+Para iterar-se sobre uma variavel array com varios elementos, usa-se o simbolo _@_ para representar o indice de cada elemento dentro do laco de repeticao.
+```bash
+array1=(1 2 3);
+array2=("Andre" "Bianca" "Ronaldo");
+
+for integer in "${array1[@]}"; do
+    echo "${integer}: ${array2[$integer]}";
+done
+
+1: Andre
+2: Bianca
+3: Ronaldo
+```
+
+
+## Exercicio 01
+Utilizando os conhecimento empreendidos na aula 01 e 02, desenvolva um script que defina uma variavel 'altura' e 'peso' com qualquer valor e imprima-os na tela usando 'echo'. Use os exemplos acima como base. Salve o arquivo como 'massa_corporal.sh' e prossiga.
+
+
 ## Exercicio 02
 Copie o codigo do exercicio 01 utilizando:
 ```bash
@@ -61,6 +103,11 @@ Agora reforme o codigo de forma que, ao inves de definicao estatica dos valores,
 
 *Nao esqueca de adicionar 'echo' antes de chamar read, para que o usuario saiba qual valor ele estara inserindo*
 Concluido o exercicio, salve-o e prossiga.
+
+## Exercicio 03
+Construa um shell script para contar o numero de caracteres que existem na frase "All your base are belong to us." utilizando o metodo nativo de contagem de comprimento de variaveis do bash.
+
+    Se houver dificuldade para realizar esse script, consulte o _base.sh_
 
 ## Final de aula
 Para finalizar a aula e enviar os exercicios realizados para o repositorio remoto, execute o script '_encerrar.sh_'
